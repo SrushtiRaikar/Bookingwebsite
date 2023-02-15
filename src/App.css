@@ -1,38 +1,128 @@
-.App {
+#b1 {
+  margin-left: .345rem;
+  background-color: #151315;
+}
+
+.first,.nav {
+
+  background-color: #21263f;
+  color: #f1f2f8;
+}
+
+.one {
+  text-shadow: 10ch;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  margin-left: 40%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btnn {
+  color: #f1f2f8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn1 {
+  background-color: #090809;
+  color: #f1f2f8;
+}
+
+.table {
+  margin-left: 17%;
+  width: 70%;
+}
+
+#b2 {
+  margin-left: 50%;
+  background-color: #171417;
+  color: #f1f2f8;
+}
+
+.main-img {
+  margin-left: 5%;
+}
+
+.container,.droptext {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+/* book cheap flights */
+.drop{
+  margin-right: 80%;
+}
+.div1 {
+  width: 33%;
+  height: 100px;
+  border: 2px solid #030303;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .div11 {
+  width: 50%;
+  height: auto;
+  margin-right: 20px;
+  
+}
+
+.div12 {
+  width: 50%;
+  height: auto;
+} */
+
+
+h2{
+  margin-left: 40%;
+}
+
+h3,#p1 {
+  margin-left: 7%;
+}
+
+/* book flights text */
+.p2{
+  margin-left: 8%;
+}
+.im1 {
+  width: 40%;
+  height: 40%;
+}
+
+.div2 {
+  width: 33%;
+  height: 100px;
+
+}
+
+.div3 {
+  width: 33%;
+  height: 100px;
+
+}
+
+.div1,.div2,.div3 {
+  border-radius: 25px;
+  border: 2px solid #030303;
+  padding: 20px;
+
+}
+
+.image-container {
+  width: 50%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.text-container {
+  width: 50%;
+  height: auto;
+}
+
+.footer{
+  background-color: #21263f;
+}
+
+
+/* last 3 links in dropdown */
+.links{
+  margin-left: 2%;
 }
