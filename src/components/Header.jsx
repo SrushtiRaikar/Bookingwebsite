@@ -18,7 +18,7 @@ export const Header = () => {
               {/* <Navbar.Text >
                 Sign in: <a href="#login">Click here</a><br></br>
               </Navbar.Text> */}
-              <Navbar.Text>
+              <Navbar.Text >
                 <img style={{ width: '10%' }} src="world-removebg-preview.png" />
                 <img style={{ width: '3%' }} src="person.png" />
                 Login: <a href="#login">Click Here</a>
