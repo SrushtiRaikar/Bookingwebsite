@@ -490,3 +490,217 @@ export default function Home() {
                                             <p><h4>Keep it flexible</h4>
                                                 We understand how important it is to have flexible plans. Look for hotels and car hire options with free cancellation so you can book now and amend later if you need to.</p>
                                         </div> */}
+
+
+
+
+
+code for images
+
+  <div className='popular mt-5 mb-4'>
+                    <h3>Popular Right Now </h3>
+                    <p id="p1">Other travellers are loving these destinations. Search flights, hotels, and car hire and join them on the adventure.</p>
+
+
+                 
+
+                    <div className="card mb-3" style={{ maxWidth: '540px' }} >
+                        <div className="row no-gutters">
+                            <div className="col-md-4">
+                                <img
+                                    src="kochi.webp"
+                                    alt="Trendy Pants and Shoes"
+                                    className="img-fluid rounded-start"
+                                />                            
+                                </div>
+                            <div className="col-md-8">
+                                <div className="card-body">
+                                    <h5 className="card-title">Card title</h5>
+                                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="container">
+                        <div class="div1">
+                            <div className='image-container'>
+                                <img className='im1' src="delhi.webp" ></img>
+
+                            </div>
+                            <div className='text-container'>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="div2">
+                            <div className='image-container'>
+                                <img className='im1' src="goa.webp" ></img>
+                            </div>
+                        </div>
+                        <div class="div3">
+                            <div className='image-container'>
+                                <img className='im1' src="mumbai.webp" ></img>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="container mt-4">
+                        <div class="div1">
+                            <div className='image-container'>
+                                <img className='im1' src="bangkok.webp" ></img>
+                            </div>
+                        </div>
+
+                        <div class="div2">
+                            <div className='image-container'>
+                                <img className='im1' src="dubai.webp" ></img>
+                            </div>
+                        </div>
+                        <div class="div3">
+                            <div className='image-container'>
+                                <img className='im1' src="bengluru.webp" ></img>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="container mt-4 mb-5">
+                        <div class="div1">
+                            <div className='image-container'>
+                                <img className='im1' src="chennai.webp" ></img>
+                            </div>
+                        </div>
+
+                        <div class="div2">
+                            <div className='image-container'>
+                                <img className='im1' src="kochi.webp" ></img>
+                            </div>
+                        </div>
+                        <div class="div3">
+                            <div className='image-container'>
+                                <img className='im1' src="singapore.webp" ></img>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                css.im1 {
+  width: 40%;
+  height: 40%;
+}
+
+.div2 {
+  width: 33%;
+  height: 100px;
+
+}
+
+.div3 {
+  width: 33%;
+  height: 100px;
+
+}
+
+.div1,.div2,.div3 {
+  border-radius: 25px;
+  border: 2px solid #030303;
+  padding: 20px;
+
+}
+
+.image-container {
+  width: 50%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.text-container {
+  width: 50%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <div className="container">
+                        <div className="div1">
+                            <div className='image-container'>
+                                <img className='i1' src="delhi.webp" />Delhi
+                                <div><a href="#Help" ><p>Help</p></a></div>
+                            </div>
+
+                        </div>
+
+                        <div class="div2">
+                            <div className='image-container'>
+                                <img className='i1' src="goa.webp" />Goa
+                            </div>
+                        </div>
+                        <div class="div3">
+                            <div className='image-container'>
+                                <img className='i1' src="mumbai.webp" />Mumbai
+                            </div>
+                        </div>
+                    </div> */}
+
+
+                    {/* <div class="container mt-4">
+                        <div class="div1">
+                            <div className='image-container'>
+                                <img className='i1' src="bangkok.webp" />Bangkok
+                            </div>
+                        </div>
+
+                        <div class="div2">
+                            <div className='image-container'>
+                                <img className='i1' src="dubai.webp" />Dubai
+                            </div>
+                        </div>
+                        <div class="div3">
+                            <div className='image-container'>
+                                <img className='i1' src="bengluru.webp" />Bengluru
+                            </div>
+                        </div>
+                    </div> */}
+
+
+                    {/* <div class="container mt-4 mb-5">
+                        <div class="div1">
+                            <div className='image-container'>
+                                <img className='i1' src="chennai.webp" alt="Delhi" />Chennai
+                            </div>
+                        </div>
+
+                        <div class="div2">
+                            <div className='image-container'>
+                                <img className='i1' src="kochi.jpg" alt="Kochi" />Kochi
+                            </div>
+                        </div>
+                        <div class="div3">
+                            <div className='image-container'>
+                                <img className='i1' src="singapore.webp" /> Singapore
+                            </div>
+                        </div>
+                    </div> */}

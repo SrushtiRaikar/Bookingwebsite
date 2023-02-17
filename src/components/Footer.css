@@ -1,8 +1,55 @@
-.main-footer {
+/* .main-footer {
     color: aliceblue;
     background-color: rgb(20, 10, 12);
     padding-top: 3em;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.footerss {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .foot1{
+    width: 33%;
+  height: 100px;
+  border: 2px solid #030303;
+  }
+
+  .foot2{
+    width: 33%;
+  height: 100px;
+  border: 2px solid #030303;
+  }
+
+  .foot3{
+    width: 33%;
+  height: 100px;
+  border: 2px solid #030303;
+  } */
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  /* background-color: red; */
+
+}
+
+.footer {
+  background-color: #21263f;
+
+}
+
+p{
+  color: aliceblue;
 }

@@ -9,6 +9,7 @@ import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/Badge';
 import { Container, Row, Col } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownItem from 'react-bootstrap/esm/DropdownItem';
 
 
 
@@ -35,6 +36,20 @@ export default function Home() {
     const onOk = (value) => {
         console.log('onOk: ', value);
     };
+
+
+    // cabin class and travellers
+    // const form = document.querySelector('form');
+    // form.addEventListener('submit', (event) => {
+    //     event.preventDefault(); // prevent the form from submitting
+
+    //     const cabinClass = document.getElementById('cabin-class').value;
+    //     const numTravelers = document.getElementById('num-travelers').value;
+
+    //     // do something with the selected values
+    //     console.log(`Selected cabin class: ${cabinClass}`);
+    //     console.log(`Selected number of travelers: ${numTravelers}`);
+    // });
 
     return (
         <>
@@ -72,10 +87,10 @@ export default function Home() {
                     </Carousel.Item>
                 </Carousel> */}
 
-                <div className='first'>
+                <div className='first '>
                     <div><h1 className='one'>Explore the World !</h1></div>
 
-                    <div className='btn mb-4'>
+                    <div className='btn  mb-4'>
                         <Space>
                             <Radio.Group value={placement} onChange={onChange}>
                                 <Radio className='btnn' value="top">Return</Radio>
@@ -108,7 +123,7 @@ export default function Home() {
                         </Drawer>
                     </div>
 
-                    <div className='table'>
+                    <div className='table mt-4'>
                         <Table striped bordered hover variant="dark">
                             <thead>
                                 <tr>
@@ -116,7 +131,7 @@ export default function Home() {
                                     <th>To</th>
                                     <th>Deapart</th>
                                     <th>Return</th>
-                                    <th>Cabin class and Travellers</th>
+                                    <th>Cabin class , Travellers</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -131,9 +146,41 @@ export default function Home() {
                                         <DatePicker showTime onChange={onChange} onOk={onOk} />
 
                                     </Space></td>
-                                    <td></td>
-                                </tr>
 
+
+                                    <td style={{ color: 'white' }}>
+                                        <Dropdown >
+                                            <Dropdown.Toggle>Travellers , Economy</Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                {/* <DropdownItem> */}
+
+                                                <form>
+                                                    <label for="cabin-class">Cabin Class:</label>
+                                                    <select id="cabin-class" name="cabin-class">
+                                                        <option value="economy">Economy</option>
+                                                        <option value="business">Business</option>
+                                                        <option value="first-class">First Class</option>
+                                                    </select>
+                                                    <br></br>
+                                                    <br></br>
+                                                    <label for="num-travelers">Number of Travelers:</label>
+                                                    <select id="num-travelers" name="num-travelers">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                    <br></br>
+                                                    <br></br>
+                                                    <input type="submit" value="Submit" />
+                                                </form>
+
+                                                {/* </DropdownItem> */}
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
                             </tbody>
                         </Table>
                     </div>
@@ -145,8 +192,8 @@ export default function Home() {
 
 
                 <div className='mt-5 mb-4'>
-                    <Container className=' mt-5 mb-4' >
-                        <Row className='mt-5 mb-4'>
+                    <Container className='  mb-4' >
+                        <Row className=' mb-4'>
                             <Col xs={3}>
                                 <Card sm={3} style={{ width: '20rem' }} >
                                     <Card.Img src="Flights.png" style={{ width: '10rem' }} />
@@ -200,7 +247,7 @@ export default function Home() {
                             </div>
 
 
-                            <button type="button" className="btn btn-lg btn-light">
+                            <button type="button" className="btn btn-lg btn-light mt-2" style={{ marginLeft: "2%" }}>
                                 Learn more !
                             </button>
                         </div>
@@ -209,96 +256,192 @@ export default function Home() {
 
 
 
-                <div className='popular mt-5 mb-4'>
-                    <h3>Popular Right Now </h3>
-                    <p id="p1">Other travellers are loving these destinations. Search flights, hotels, and car hire and join them on the adventure.</p>
+                <div>
+                    <h3 className=' mt-5'>Popular Right Now </h3>
+                    <p className=' mb-4' id="p1">Other travellers are loving these destinations. Search flights, hotels, and car hire and join them on the adventure.</p>
 
 
-                    {/* <div classname="card mb-3" style="max-width: 540px;">
-                        <div classname="row no-gutters">
-                            <div classname="col-md-4">
-                                <img src="kochi.webp" class="card-img" />
-                            </div>
-                            <div classname="col-md-8">
-                                <div classname="card-body">
-                                    <h5 classname="card-title">Card title</h5>
-                                    <p classname="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p classname="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
+                    <div className='mx-auto'>
+                        <div className='mx-auto'>
+                            <Container className=' mx-auto' >
+                                <Row >
+                                    <Col >
+                                        <Card style={{ width: '350px' }}>
+                                            {/* <Card.Body> */}
+                                            <Row>
+                                                {/* <Col class="col-4"> <Card.Img variant="top" className='i1' src="delhi.webp" /></Col> */}
+                                                <Card.Img variant="top" className='i1' src="delhi.webp" />
 
+                                                <Col class="col-8 ">DELHI
+                                                    <Row>
+                                                        <Col className='col-4 '><a href="#Flights" ><p>Flights</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Cars</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Hotels</p></a></Col>
+                                                    </Row>
+                                                </Col>
+                                            </Row>
+                                            {/* </Card.Body> */}
+                                        </Card>
 
-                    <div class="container">
-                        <div class="div1">
-                            <div className='image-container'>
-                                <img className='im1' src="delhi.webp" ></img>
+                                    </Col>
 
-                            </div>
-                            <div className='text-container'>
+                                    <Col >
+                                        <Card style={{ width: '350px' }}>
+                                            {/* <Card.Body> */}
+                                            <Row>
+                                                {/* <Col class="col-4"> <Card.Img variant="top" className='i1' src="delhi.webp" /></Col> */}
+                                                <Card.Img variant="top" className='i1' src="goa.webp" />
 
-                            </div>
+                                                <Col class="col-8">GOA
+                                                    <Row>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Flights</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Cars</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Hotels</p></a></Col>
+                                                    </Row>
+                                                </Col>
+                                            </Row>
+                                            {/* </Card.Body> */}
+                                        </Card>
 
+                                    </Col>
 
-                        </div>
-
-                        <div class="div2">
-                            <div className='image-container'>
-                                <img className='im1' src="goa.webp" ></img>
-                            </div>
-                        </div>
-                        <div class="div3">
-                            <div className='image-container'>
-                                <img className='im1' src="mumbai.webp" ></img>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="container mt-4">
-                        <div class="div1">
-                            <div className='image-container'>
-                                <img className='im1' src="bangkok.webp" ></img>
-                            </div>
-                        </div>
-
-                        <div class="div2">
-                            <div className='image-container'>
-                                <img className='im1' src="dubai.webp" ></img>
-                            </div>
-                        </div>
-                        <div class="div3">
-                            <div className='image-container'>
-                                <img className='im1' src="bengluru.webp" ></img>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="container mt-4 mb-5">
-                        <div class="div1">
-                            <div className='image-container'>
-                                <img className='im1' src="chennai.webp" ></img>
-                            </div>
+                                    <Col >
+                                        <Card style={{ width: '350px' }}>
+                                            {/* <Card.Body> */}
+                                            <Row>
+                                                {/* <Col class="col-4"> <Card.Img variant="top" className='i1' src="delhi.webp" /></Col> */}
+                                                <Card.Img variant="top" className='i1' src="mumbai.webp" />
+                                                <Col class="col-8">MUMBAI
+                                                    <Row>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Flights</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Cars</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Hotels</p></a></Col>
+                                                    </Row>
+                                                </Col>
+                                            </Row>
+                                            {/* </Card.Body> */}
+                                        </Card>
+                                    </Col>
+                                </Row>
+                            </Container>
                         </div>
 
-                        <div class="div2">
-                            <div className='image-container'>
-                                <img className='im1' src="kochi.webp" ></img>
-                            </div>
-                        </div>
-                        <div class="div3">
-                            <div className='image-container'>
-                                <img className='im1' src="singapore.webp" ></img>
-                            </div>
+                        <div className='mt-5 mb-4 mx-auto'>
+                            <Container  >
+                                <Row >
+                                    <Col >
+                                        <Card style={{ width: '350px' }}>
+                                            {/* <Card.Body> */}
+                                            <Row>
+                                                {/* <Col class="col-4"> <Card.Img variant="top" className='i1' src="delhi.webp" /></Col> */}
+                                                <Card.Img variant="top" className='i1' src="bangkok.webp" />
+                                                <Col class="col-8">BANGKOK
+                                                    <Row>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Flights</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Cars</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Hotels</p></a></Col>
+                                                    </Row>
+                                                </Col>
+                                            </Row>
+                                            {/* </Card.Body> */}
+                                        </Card>
+                                    </Col>
+                                    <Col >
+                                        <Card style={{ width: '350px' }}>
+                                            {/* <Card.Body> */}
+                                            <Row>
+                                                {/* <Col class="col-4"> <Card.Img variant="top" className='i1' src="delhi.webp" /></Col> */}
+                                                <Card.Img variant="top" className='i1' src="dubai.webp" />
+                                                <Col class="col-8">DUBAI
+                                                    <Row>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Flights</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Cars</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Hotels</p></a></Col>
+                                                    </Row>
+                                                </Col>
+                                            </Row>
+                                            {/* </Card.Body> */}
+                                        </Card>
+                                    </Col>
+                                    <Col >
+                                        <Card style={{ width: '350px' }}>
+                                            {/* <Card.Body> */}
+                                            <Row>
+                                                {/* <Col class="col-4"> <Card.Img variant="top" className='i1' src="delhi.webp" /></Col> */}
+                                                <Card.Img variant="top" className='i1' src="bengluru.webp" />
+                                                <Col class="col-8">BENGKURU
+                                                    <Row>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Flights</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Cars</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Hotels</p></a></Col>
+                                                    </Row>
+                                                </Col>
+                                            </Row>
+                                            {/* </Card.Body> */}
+                                        </Card>
+                                    </Col>
+                                </Row>
+                            </Container>
                         </div>
 
+                        <div className='mt-5 mb-4 mx-auto'>
+                            <Container>
+                                <Row>
+                                    <Col >
+                                        <Card style={{ width: '350px' }}>
+                                            {/* <Card.Body> */}
+                                            <Row>
+                                                {/* <Col class="col-4"> <Card.Img variant="top" className='i1' src="delhi.webp" /></Col> */}
+                                                <Card.Img variant="top" className='i1' src="chennai.webp" />
+                                                <Col class="col-8">CHENNAI
+                                                    <Row>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Flights</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Cars</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Hotels</p></a></Col>
+                                                    </Row>
+                                                </Col>
+                                            </Row>
+                                            {/* </Card.Body> */}
+                                        </Card>
+                                    </Col>
+                                    <Col >
+                                        <Card style={{ width: '350px' }}>
+                                            {/* <Card.Body> */}
+                                            <Row>
+                                                {/* <Col class="col-4"> <Card.Img variant="top" className='i1' src="delhi.webp" /></Col> */}
+                                                <Card.Img variant="top" className='i1' src="kochi.jpg" />
+                                                <Col class="col-8">KOCHI
+                                                    <Row>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Flights</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Cars</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Hotels</p></a></Col>
+                                                    </Row>
+                                                </Col>
+                                            </Row>
+                                            {/* </Card.Body> */}
+                                        </Card>
+                                    </Col>
+                                    <Col >
+                                        <Card style={{ width: '350px' }}>
+                                            {/* <Card.Body> */}
+                                            <Row>
+                                                {/* <Col class="col-4"> <Card.Img variant="top" className='i1' src="delhi.webp" /></Col> */}
+                                                <Card.Img variant="top" className='i1' src="singapore.webp" />
+                                                <Col mt-2 class="col-8">SINGAPORE
+                                                    <Row>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Flights</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Cars</p></a></Col>
+                                                        <Col className='col-4'><a href="#Flights" ><p>Hotels</p></a></Col>
+                                                    </Row>
+                                                </Col>
+                                            </Row>
+                                            {/* </Card.Body> */}
+                                        </Card>
+                                    </Col>
 
+                                </Row>
+                            </Container>
+                        </div>
                     </div>
                 </div>
 

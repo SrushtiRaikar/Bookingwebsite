@@ -1,5 +1,6 @@
 import { Footer } from 'antd/es/layout/layout';
 import './App.css';
+import { Footers } from './components/Footers';
 import { Header } from './components/Header';
 import Home from './components/Home';
 
@@ -24,7 +25,8 @@ function App() {
 
       </Routes> */}
       <Home/>
-      <Footer/>
+      {/* <Footer/> */}
+      <Footers/>
     </>
   );
 }
